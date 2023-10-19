@@ -3,13 +3,20 @@ package algorithms.cw5;
 import java.util.ArrayList;
 
 public class MainGreedy {
+    /*В задаче о рюкзаке жадный алгоритм не дает точного ответа,
+    потому что он основывается на принципе выбора локально оптимального решения на каждом шаге
+    Жадный алгоритм выбирает предмет с наибольшей стоимостью или наибольшим соотношением стоимости к весу на каждом шаге,
+    чтобы максимизировать общую стоимость предметов в рюкзаке.
+    * */
+
+
     //2. Жадный алгоритм
 //Сначала возьмем самый дорогой, потом самый дорого из оставшихся итд
     public static void main(String[] args) {
         int[] weights = {3, 4, 5, 8, 9};
         int[] prices = {1, 6, 4, 7, 6};
 
-        int maxWeight = 13;
+        int maxWeight = 23;
 
         ArrayList<Integer> remainingIndexes = new ArrayList<>();
         ArrayList<Integer> selectedIndexes = new ArrayList<>();
