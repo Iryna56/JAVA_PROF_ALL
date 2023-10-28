@@ -1,16 +1,15 @@
 package algorithms_2809;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
-public class Stack {
+public class StackExample {
     private int top;        // место, куда мы положим следующий(новый) элемент
     private Integer[] array; // массив в котором хранятся данные
     private int size;       // храним количество элементов в стеке
     private int capacity;    // вместимость стека
     private static final int DEFAULT_CAPACITY = 10; // статическая константа
 
-    public Stack() {
+    public StackExample() {
         int top = 0;
         array = new Integer[DEFAULT_CAPACITY];
         size = 0;
